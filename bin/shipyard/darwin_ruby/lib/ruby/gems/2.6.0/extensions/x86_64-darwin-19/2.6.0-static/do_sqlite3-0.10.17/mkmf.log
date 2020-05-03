@@ -1,0 +1,317 @@
+have_header: checking for sqlite3.h... -------------------- yes
+
+"clang -o conftest -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/x86_64-darwin19 -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/ruby/backward -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0 -I. -I/usr/local/include -I/opt/local/include -I/usr/include  -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -I/usr/local/opt/libyaml/include -I/usr/local/opt/gdbm/include -I/usr/local/opt/libffi/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -pipe -Wall  -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib -L/usr/local/lib -L/opt/local/lib -L/usr/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib -L. -fstack-protector-strong -L/usr/local/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib     -lruby.2.6-static -framework Security -framework Foundation -lpthread -lgmp -ldl -lobjc   "
+ld: warning: directory not found for option '-L/opt/local/lib'
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"clang -E -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/x86_64-darwin19 -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/ruby/backward -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0 -I. -I/usr/local/include -I/opt/local/include -I/usr/include  -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -I/usr/local/opt/libyaml/include -I/usr/local/opt/gdbm/include -I/usr/local/opt/libffi/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -pipe -Wall  -DHAVE_NO_DATETIME_NEWBANG  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sqlite3.h>
+/* end */
+
+--------------------
+
+have_library: checking for sqlite3_open() in -lsqlite3... -------------------- yes
+
+"clang -o conftest -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/x86_64-darwin19 -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/ruby/backward -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0 -I. -I/usr/local/include -I/opt/local/include -I/usr/include  -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -I/usr/local/opt/libyaml/include -I/usr/local/opt/gdbm/include -I/usr/local/opt/libffi/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -pipe -Wall  -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib -L/usr/local/lib -L/opt/local/lib -L/usr/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib -L. -fstack-protector-strong -L/usr/local/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib     -lruby.2.6-static -framework Security -framework Foundation -lpthread -lgmp -ldl -lobjc -lsqlite3   "
+conftest.c:14:57: error: use of undeclared identifier 'sqlite3_open'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_open; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return 0;
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_open; return !p; }
+/* end */
+
+"clang -o conftest -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/x86_64-darwin19 -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/ruby/backward -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0 -I. -I/usr/local/include -I/opt/local/include -I/usr/include  -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -I/usr/local/opt/libyaml/include -I/usr/local/opt/gdbm/include -I/usr/local/opt/libffi/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -pipe -Wall  -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib -L/usr/local/lib -L/opt/local/lib -L/usr/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib -L. -fstack-protector-strong -L/usr/local/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib     -lruby.2.6-static -framework Security -framework Foundation -lpthread -lgmp -ldl -lobjc -lsqlite3   "
+ld: warning: directory not found for option '-L/opt/local/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return 0;
+13: }
+14: extern void sqlite3_open();
+15: int t(void) { sqlite3_open(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for localtime_r()... -------------------- yes
+
+"clang -o conftest -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/x86_64-darwin19 -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/ruby/backward -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0 -I. -I/usr/local/include -I/opt/local/include -I/usr/include  -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -I/usr/local/opt/libyaml/include -I/usr/local/opt/gdbm/include -I/usr/local/opt/libffi/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -pipe -Wall  -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib -L/usr/local/lib -L/opt/local/lib -L/usr/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib -L. -fstack-protector-strong -L/usr/local/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib    -lsqlite3  -lruby.2.6-static -framework Security -framework Foundation -lpthread -lgmp -ldl -lobjc -lsqlite3   "
+conftest.c:14:57: error: use of undeclared identifier 'localtime_r'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))localtime_r; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return 0;
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))localtime_r; return !p; }
+/* end */
+
+"clang -o conftest -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/x86_64-darwin19 -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/ruby/backward -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0 -I. -I/usr/local/include -I/opt/local/include -I/usr/include  -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -I/usr/local/opt/libyaml/include -I/usr/local/opt/gdbm/include -I/usr/local/opt/libffi/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -pipe -Wall  -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib -L/usr/local/lib -L/opt/local/lib -L/usr/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib -L. -fstack-protector-strong -L/usr/local/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib    -lsqlite3  -lruby.2.6-static -framework Security -framework Foundation -lpthread -lgmp -ldl -lobjc -lsqlite3   "
+ld: warning: directory not found for option '-L/opt/local/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return 0;
+13: }
+14: extern void localtime_r();
+15: int t(void) { localtime_r(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for gmtime_r()... -------------------- yes
+
+"clang -o conftest -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/x86_64-darwin19 -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/ruby/backward -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0 -I. -I/usr/local/include -I/opt/local/include -I/usr/include  -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -I/usr/local/opt/libyaml/include -I/usr/local/opt/gdbm/include -I/usr/local/opt/libffi/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -pipe -Wall  -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib -L/usr/local/lib -L/opt/local/lib -L/usr/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib -L. -fstack-protector-strong -L/usr/local/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib    -lsqlite3  -lruby.2.6-static -framework Security -framework Foundation -lpthread -lgmp -ldl -lobjc -lsqlite3   "
+conftest.c:14:57: error: use of undeclared identifier 'gmtime_r'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))gmtime_r; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return 0;
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))gmtime_r; return !p; }
+/* end */
+
+"clang -o conftest -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/x86_64-darwin19 -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/ruby/backward -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0 -I. -I/usr/local/include -I/opt/local/include -I/usr/include  -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -I/usr/local/opt/libyaml/include -I/usr/local/opt/gdbm/include -I/usr/local/opt/libffi/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -pipe -Wall  -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib -L/usr/local/lib -L/opt/local/lib -L/usr/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib -L. -fstack-protector-strong -L/usr/local/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib    -lsqlite3  -lruby.2.6-static -framework Security -framework Foundation -lpthread -lgmp -ldl -lobjc -lsqlite3   "
+ld: warning: directory not found for option '-L/opt/local/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return 0;
+13: }
+14: extern void gmtime_r();
+15: int t(void) { gmtime_r(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for sqlite3_prepare_v2()... -------------------- yes
+
+"clang -o conftest -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/x86_64-darwin19 -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/ruby/backward -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0 -I. -I/usr/local/include -I/opt/local/include -I/usr/include  -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -I/usr/local/opt/libyaml/include -I/usr/local/opt/gdbm/include -I/usr/local/opt/libffi/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -pipe -Wall  -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib -L/usr/local/lib -L/opt/local/lib -L/usr/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib -L. -fstack-protector-strong -L/usr/local/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib    -lsqlite3  -lruby.2.6-static -framework Security -framework Foundation -lpthread -lgmp -ldl -lobjc -lsqlite3   "
+conftest.c:14:57: error: use of undeclared identifier 'sqlite3_prepare_v2'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_prepare_v2; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return 0;
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_prepare_v2; return !p; }
+/* end */
+
+"clang -o conftest -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/x86_64-darwin19 -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/ruby/backward -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0 -I. -I/usr/local/include -I/opt/local/include -I/usr/include  -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -I/usr/local/opt/libyaml/include -I/usr/local/opt/gdbm/include -I/usr/local/opt/libffi/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -pipe -Wall  -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib -L/usr/local/lib -L/opt/local/lib -L/usr/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib -L. -fstack-protector-strong -L/usr/local/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib    -lsqlite3  -lruby.2.6-static -framework Security -framework Foundation -lpthread -lgmp -ldl -lobjc -lsqlite3   "
+ld: warning: directory not found for option '-L/opt/local/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return 0;
+13: }
+14: extern void sqlite3_prepare_v2();
+15: int t(void) { sqlite3_prepare_v2(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for sqlite3_open_v2()... -------------------- yes
+
+"clang -o conftest -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/x86_64-darwin19 -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/ruby/backward -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0 -I. -I/usr/local/include -I/opt/local/include -I/usr/include  -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -I/usr/local/opt/libyaml/include -I/usr/local/opt/gdbm/include -I/usr/local/opt/libffi/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -pipe -Wall  -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib -L/usr/local/lib -L/opt/local/lib -L/usr/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib -L. -fstack-protector-strong -L/usr/local/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib    -lsqlite3  -lruby.2.6-static -framework Security -framework Foundation -lpthread -lgmp -ldl -lobjc -lsqlite3   "
+conftest.c:14:57: error: use of undeclared identifier 'sqlite3_open_v2'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_open_v2; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return 0;
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_open_v2; return !p; }
+/* end */
+
+"clang -o conftest -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/x86_64-darwin19 -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/ruby/backward -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0 -I. -I/usr/local/include -I/opt/local/include -I/usr/include  -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -I/usr/local/opt/libyaml/include -I/usr/local/opt/gdbm/include -I/usr/local/opt/libffi/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -pipe -Wall  -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib -L/usr/local/lib -L/opt/local/lib -L/usr/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib -L. -fstack-protector-strong -L/usr/local/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib    -lsqlite3  -lruby.2.6-static -framework Security -framework Foundation -lpthread -lgmp -ldl -lobjc -lsqlite3   "
+ld: warning: directory not found for option '-L/opt/local/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return 0;
+13: }
+14: extern void sqlite3_open_v2();
+15: int t(void) { sqlite3_open_v2(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for sqlite3_enable_load_extension()... -------------------- no
+
+"clang -o conftest -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/x86_64-darwin19 -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/ruby/backward -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0 -I. -I/usr/local/include -I/opt/local/include -I/usr/include  -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -I/usr/local/opt/libyaml/include -I/usr/local/opt/gdbm/include -I/usr/local/opt/libffi/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -pipe -Wall  -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib -L/usr/local/lib -L/opt/local/lib -L/usr/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib -L. -fstack-protector-strong -L/usr/local/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib    -lsqlite3  -lruby.2.6-static -framework Security -framework Foundation -lpthread -lgmp -ldl -lobjc -lsqlite3   "
+conftest.c:14:57: error: use of undeclared identifier 'sqlite3_enable_load_extension'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_enable_load_extension; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return 0;
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_enable_load_extension; return !p; }
+/* end */
+
+"clang -o conftest -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/x86_64-darwin19 -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0/ruby/backward -I/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/include/ruby-2.6.0 -I. -I/usr/local/include -I/opt/local/include -I/usr/include  -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -I/usr/local/opt/libyaml/include -I/usr/local/opt/gdbm/include -I/usr/local/opt/libffi/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens  -pipe -Wall  -DHAVE_NO_DATETIME_NEWBANG conftest.c  -L. -L/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib -L/usr/local/lib -L/opt/local/lib -L/usr/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib -L. -fstack-protector-strong -L/usr/local/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -L/usr/local/opt/libffi/lib    -lsqlite3  -lruby.2.6-static -framework Security -framework Foundation -lpthread -lgmp -ldl -lobjc -lsqlite3   "
+ld: warning: directory not found for option '-L/opt/local/lib'
+Undefined symbols for architecture x86_64:
+  "_sqlite3_enable_load_extension", referenced from:
+      _t in conftest-a807a5.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return 0;
+13: }
+14: extern void sqlite3_enable_load_extension();
+15: int t(void) { sqlite3_enable_load_extension(); return 0; }
+/* end */
+
+--------------------
+

@@ -1,0 +1,33 @@
+current directory: /Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib/ruby/gems/2.6.0/gems/do_sqlite3-0.10.17/ext/do_sqlite3
+/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/bin/ruby -I /Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib/ruby/2.6.0 -r ./siteconf20200502-9660-jwgupr.rb extconf.rb
+checking for sqlite3.h... yes
+checking for sqlite3_open() in -lsqlite3... yes
+checking for localtime_r()... yes
+checking for gmtime_r()... yes
+checking for sqlite3_prepare_v2()... yes
+checking for sqlite3_open_v2()... yes
+checking for sqlite3_enable_load_extension()... no
+creating Makefile
+
+current directory: /Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib/ruby/gems/2.6.0/gems/do_sqlite3-0.10.17/ext/do_sqlite3
+make "DESTDIR=" clean
+
+current directory: /Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib/ruby/gems/2.6.0/gems/do_sqlite3-0.10.17/ext/do_sqlite3
+make "DESTDIR="
+compiling do_common.c
+do_common.c:69:127: warning: function 'data_objects_raise_error' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void data_objects_raise_error(VALUE self, const struct errcodes *errors, int errnum, VALUE message, VALUE query, VALUE state) {
+                                                                                                                              ^
+1 warning generated.
+compiling do_sqlite3.c
+do_sqlite3.c:149:12: warning: implicit conversion loses integer precision: 'VALUE' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+    return rb_cstr2inum(RSTRING_PTR(timeout), 0);
+    ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+compiling do_sqlite3_extension.c
+linking shared-object do_sqlite3/do_sqlite3.bundle
+ld: warning: directory not found for option '-L/opt/local/lib'
+
+current directory: /Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib/ruby/gems/2.6.0/gems/do_sqlite3-0.10.17/ext/do_sqlite3
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 do_sqlite3.bundle ./.gem.20200502-9660-huhihq/do_sqlite3

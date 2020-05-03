@@ -1,0 +1,15 @@
+current directory: /Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib/ruby/gems/2.6.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+/Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/bin/ruby -I /Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib/ruby/2.6.0 -r ./siteconf20200502-9003-bx935d.rb extconf.rb
+creating Makefile
+
+current directory: /Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib/ruby/gems/2.6.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR=" clean
+
+current directory: /Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib/ruby/gems/2.6.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+current directory: /Users/tomgong/Documents/ruby_ship/bin/shipyard/darwin_ruby/lib/ruby/gems/2.6.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20200502-9003-1pl0j3u
