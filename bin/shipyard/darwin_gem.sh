@@ -3,6 +3,8 @@ GEM_PATH="${DIR}/darwin_ruby/lib/ruby/gems/2.1.0 ruby/:${DIR}/darwin_ruby/lib/ru
 x86_64-darwin14.0/"
 GEM_HOME="${DIR}/darwin_ruby/lib/ruby/gems/2.1.0 ruby/"
 "${DIR}/darwin_ruby/bin/gem" "$@"
+
+# Commented out to streamline hacky_bundler
 # if [[ "$1" == "install" ]]; then
 #   cd "${DIR}/../../"
 #   ruby "./tools/auto_relink_dylibs.rb"
