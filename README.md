@@ -1,6 +1,28 @@
 Ruby Ship
 =========
 
+## Forked Changes
+
+I am using ruby_ship to run my sinatra app, secretary, as an executable program. This means ruby_ship must come with the ruby interpreter and all dependencies pre-installed. I plan to wrap this executable in an Electron app and distribute it as a Desktop app. Right now it looks like ruby_ship supports OSX and linux but not Windows.
+
+### Notes:
+- `hacky_bundler.rb` is used in lieu of ./bin/ruby_ship_bundler.sh since the latter doesn't work.
+- ruby_ship executables are using ruby-2.6.6
+
+**Every time dependencies need to be compiled for a release of secretary, follow these steps:**
+1. Copy over secretary's Gemfile and Gemfile.lock to ruby_ship/
+2. Run `ruby hacky_bundler.rb` to install the gems listed in Gemfile.lock
+3. Try running secretary using the ruby_ship executable, i.e. run `./bin/ruby_ship.sh path/to/secretary/secretary.rb`
+4. Manually resolved gem version conflicts by uninstalling gems via `./bin/ruby_ship_gem.sh uninstall`
+5. Repeat until all gem version conflicts are resolved and secretary can be run using the ruby ship executable.
+6. Relink dynamic libraries by running `ruby /tools/auto_relink_dylibs.rb`
+
+**Changes I made to the original ruby_ship in order to make it work (and run secretary):**
+- Built a ruby-2.6.6 to replace the default ruby-2.1.0 in order to resolve openssl dylib issues when running `./bin/ruby_ship_gem.sh install`
+- Wrote `hacky_bundler.rb` to install dependencies in Gemfile.lock since `./bin/ruby_ship_bundle.sh install` doesn't work
+
+## Begin Original README
+
 [![Join the chat at https://gitter.im/stephan-nordnes-eriksen/ruby_ship](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/stephan-nordnes-eriksen/ruby_ship?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Portable MRI Ruby environment on any platform, with any version of MRI Ruby! No need to install Ruby on a computer to use it any more! 
